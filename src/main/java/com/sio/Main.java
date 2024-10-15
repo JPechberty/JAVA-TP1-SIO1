@@ -7,6 +7,7 @@ public class Main {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+
         System.out.println("#############################################");
         System.out.println("            JAVA TP1 SIO 1 ALT");
         System.out.println("#############################################");
@@ -23,11 +24,7 @@ public class Main {
             scanner.nextLine(); // Consume newline
             switch (choice) {
                 case 1:
-                    System.out.println("Entrer la valeur du côté:");
-                    double cote = scanner.nextDouble();
-                    double aire = cote * cote;
-                    System.out.println("La aire du carré est " + aire +" cm²");
-
+                    calculerAireCarre();
                     break;
                 case 2:
                     System.out.println("Entrer le nombre limite: ");
@@ -62,4 +59,12 @@ public class Main {
             }
         }
     }
+
+    private static void calculerAireCarre() {
+        System.out.println("Entrer la valeur du côté:");
+        double cote = scanner.nextDouble();
+        double aire = cote * cote;
+        System.out.println("La aire du carré est " + aire +" cm²");
+    }
+
 }
